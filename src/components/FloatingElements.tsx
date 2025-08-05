@@ -13,18 +13,20 @@ export const FloatingElements = () => {
     <>
       {/* Fixed floating elements */}
       <div className="fixed inset-0 pointer-events-none z-10 overflow-hidden">
-        {/* Coffee Cup - Easter Egg */}
+        {/* Blueberry Avatar - Easter Egg */}
         <div 
           className="absolute top-20 right-8 cursor-pointer pointer-events-auto"
           onClick={handleCoffeeClick}
         >
-          <Coffee className="w-8 h-8 text-coffee-medium hover:text-coffee-dark transition-colors animate-float hover:animate-wiggle" />
+          <div className="w-8 h-8 bg-blueberry-medium rounded-full hover:bg-blueberry-dark transition-colors animate-float hover:animate-wiggle flex items-center justify-center">
+            <span className="text-white text-sm">👩‍💻</span>
+          </div>
           
-          {/* Steam effect */}
+          {/* Sparkle effect */}
           <div className="absolute -top-2 left-1/2 transform -translate-x-1/2">
-            <div className="w-1 h-4 bg-muted-foreground/30 rounded-full animate-coffee-steam" />
-            <div className="w-1 h-4 bg-muted-foreground/20 rounded-full animate-coffee-steam absolute left-1" style={{ animationDelay: "0.3s" }} />
-            <div className="w-1 h-4 bg-muted-foreground/20 rounded-full animate-coffee-steam absolute -left-1" style={{ animationDelay: "0.6s" }} />
+            <div className="w-1 h-1 bg-citrus-medium rounded-full animate-bounce-gentle opacity-80" />
+            <div className="w-1 h-1 bg-citrus-light rounded-full animate-bounce-gentle absolute left-2 opacity-60" style={{ animationDelay: "0.3s" }} />
+            <div className="w-1 h-1 bg-citrus-medium rounded-full animate-bounce-gentle absolute -left-2 opacity-70" style={{ animationDelay: "0.6s" }} />
           </div>
         </div>
 
@@ -35,7 +37,7 @@ export const FloatingElements = () => {
 
         {/* Water droplets */}
         <div className="absolute top-1/3 right-1/4">
-          <Droplets className="w-5 h-5 text-water-medium/50 animate-bounce-gentle" style={{ animationDelay: "1s" }} />
+          <Droplets className="w-5 h-5 text-aqua-medium/50 animate-bounce-gentle" style={{ animationDelay: "1s" }} />
         </div>
 
         {/* Heart */}
@@ -72,15 +74,17 @@ export const FloatingElements = () => {
         <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-background/80 backdrop-blur-sm animate-fade-in-up">
           <div className="bg-card p-8 rounded-2xl border-2 border-primary/30 shadow-2xl max-w-md mx-4 text-center animate-scale-in">
             <div className="mb-4">
-              <Coffee className="w-16 h-16 text-coffee-medium mx-auto animate-wiggle" />
+              <div className="w-16 h-16 bg-blueberry-medium rounded-full mx-auto animate-wiggle flex items-center justify-center">
+                <span className="text-white text-3xl">👩‍💻</span>
+              </div>
             </div>
             
             <h3 className="text-2xl font-bold text-primary mb-4">
-              You found my secret! ☕✨
+              You found my secret! 🫐✨
             </h3>
             
             <p className="text-muted-foreground mb-4">
-              "Code is like coffee - it's best when it's strong, well-brewed, and shared with good company."
+              "Debugging is like solving puzzles - it's best when you have blueberries for brain fuel and good music for focus!"
             </p>
             
             <div className="flex justify-center space-x-4 text-sm">

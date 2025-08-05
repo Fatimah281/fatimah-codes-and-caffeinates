@@ -153,27 +153,27 @@ export const Contact = () => {
             </Card>
 
             {/* Fun Facts */}
-            <Card className="p-6 bg-gradient-to-br from-card to-peach-light/20 border-2 border-accent/30">
+            <Card className="p-6 bg-gradient-to-br from-card to-coral-light/20 border-2 border-accent/30">
               <h3 className="text-xl font-bold text-primary mb-4">
                 When you message me... ✨
               </h3>
               
               <div className="space-y-3 text-muted-foreground">
                 <div className="flex items-center space-x-3">
-                  <Coffee className="w-5 h-5 text-coffee-medium animate-coffee-steam" />
-                  <span>I'll read it with my morning coffee</span>
-                </div>
-                <div className="flex items-center space-x-3">
                   <span className="text-lg animate-bounce-gentle">🫐</span>
-                  <span>Brainstorm ideas while snacking on blueberries</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Droplets className="w-5 h-5 text-water-medium animate-pulse-soft" />
-                  <span>Stay hydrated while crafting the perfect response</span>
+                  <span>I'll read it while enjoying my morning blueberries</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <span className="text-lg animate-wiggle">💻</span>
-                  <span>Reply with code-level attention to detail</span>
+                  <span>Brainstorm ideas while debugging code</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Droplets className="w-5 h-5 text-aqua-medium animate-pulse-soft" />
+                  <span>Stay hydrated while crafting the perfect response</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <span className="text-lg">☀️</span>
+                  <span>Reply with summer energy and attention to detail</span>
                 </div>
               </div>
             </Card>
@@ -205,15 +205,15 @@ export const Contact = () => {
         </div>
 
         {/* Footer Message */}
-        <Card className="mt-12 p-6 bg-gradient-to-r from-water-light via-blueberry-light to-peach-light border-2 border-primary/20 animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
+        <Card className="mt-12 p-6 bg-gradient-to-r from-aqua-light via-blueberry-light to-coral-light border-2 border-primary/20 animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
           <div className="text-center">
             <h4 className="text-xl font-bold text-primary mb-2">
-              Let's connect and stay hydrated! 💧
+              Let's connect and stay hydrated 💧 under the summer sun ☀️
             </h4>
             <p className="text-muted-foreground">
               Whether you have a project in mind, want to collaborate, or just want to chat about 
-              code over a virtual coffee, I'd love to hear from you. Every great project starts 
-              with a simple "hello"! ☕✨
+              code and blueberries, I'd love to hear from you. Every great project starts 
+              with a simple "hello"! 🫐✨
             </p>
           </div>
         </Card>

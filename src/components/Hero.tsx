@@ -47,15 +47,20 @@ export const Hero = () => {
             Hi, I'm{" "}
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
               Fatimah
-            </span>
+            </span>{" "}
+            👋
           </h1>
 
           {/* Subtitle with typing animation effect */}
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-            Full Stack Developer who runs on{" "}
-            <span className="text-coffee-medium font-semibold">code</span>,{" "}
-            <span className="text-coffee-dark font-semibold">coffee</span>, and{" "}
-            <span className="text-primary font-semibold">curiosity</span> ☕
+            A{" "}
+            <span className="text-blueberry-medium font-semibold">blueberry girl</span>{" "}
+            who loves writing{" "}
+            <span className="text-primary font-semibold">code</span>{" "}
+            and debugging problems one line at a time, blending{" "}
+            <span className="text-aqua-medium font-semibold">curiosity</span>{" "}
+            with{" "}
+            <span className="text-coral-medium font-semibold">creativity</span>
           </p>
 
           {/* Personalized tagline */}
@@ -66,16 +71,16 @@ export const Hero = () => {
           {/* Daily routine icons */}
           <div className="flex justify-center items-center space-x-8 mb-8 animate-fade-in-up" style={{ animationDelay: "0.6s" }}>
             <div className="flex flex-col items-center">
-              <img src={coffeeIcon} alt="Coffee" className="w-16 h-16 rounded-full animate-bounce-gentle" />
-              <span className="text-sm text-muted-foreground mt-2">Morning Coffee</span>
+              <img src={blueberryIcon} alt="Blueberries" className="w-16 h-16 rounded-full animate-bounce-gentle" />
+              <span className="text-sm text-muted-foreground mt-2">Morning Blueberries</span>
             </div>
             <div className="flex flex-col items-center">
-              <img src={blueberryIcon} alt="Blueberries" className="w-16 h-16 rounded-full animate-bounce-gentle" style={{ animationDelay: "0.2s" }} />
-              <span className="text-sm text-muted-foreground mt-2">+ Blueberries</span>
-            </div>
-            <div className="flex flex-col items-center">
-              <img src={waterIcon} alt="Water" className="w-16 h-16 rounded-full animate-bounce-gentle" style={{ animationDelay: "0.4s" }} />
+              <img src={waterIcon} alt="Water" className="w-16 h-16 rounded-full animate-bounce-gentle" style={{ animationDelay: "0.2s" }} />
               <span className="text-sm text-muted-foreground mt-2">1.5L Water</span>
+            </div>
+            <div className="flex flex-col items-center">
+              <img src={coffeeIcon} alt="Code" className="w-16 h-16 rounded-full animate-bounce-gentle" style={{ animationDelay: "0.4s" }} />
+              <span className="text-sm text-muted-foreground mt-2">Debugging Fun</span>
             </div>
           </div>
 

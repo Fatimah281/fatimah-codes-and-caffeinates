@@ -9,34 +9,30 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Base warm gradient background */
-    --background: 25 45% 98%;
-    --foreground: 30 25% 15%;
+    /* Base bright summer background */
+    --background: 50 80% 98%;
+    --foreground: 220 20% 20%;
 
-    /* Coffee-inspired warm browns */
-    --coffee-dark: 25 35% 25%;
-    --coffee-medium: 30 45% 45%;
-    --coffee-light: 35 55% 85%;
-
-    /* Blueberry purples */
-    --blueberry-dark: 260 45% 35%;
-    --blueberry-medium: 270 55% 65%;
-    --blueberry-light: 280 65% 90%;
-
-    /* Water blues */
-    --water-dark: 200 55% 45%;
-    --water-medium: 210 65% 75%;
-    --water-light: 220 75% 95%;
-
-    /* Sunrise peach */
-    --peach-dark: 15 75% 65%;
-    --peach-medium: 20 85% 75%;
-    --peach-light: 25 95% 92%;
-
-    /* Lavender */
-    --lavender-dark: 280 35% 55%;
-    --lavender-medium: 285 45% 75%;
-    --lavender-light: 290 55% 95%;
+    /* Bright summer theme colors */
+    --coral-dark: 10 85% 55%;
+    --coral-medium: 10 80% 65%;
+    --coral-light: 10 70% 80%;
+    
+    --aqua-dark: 180 70% 45%;
+    --aqua-medium: 180 65% 60%;
+    --aqua-light: 180 55% 75%;
+    
+    --citrus-dark: 50 95% 55%;
+    --citrus-medium: 50 90% 70%;
+    --citrus-light: 50 80% 85%;
+    
+    --sky-dark: 210 80% 50%;
+    --sky-medium: 210 75% 65%;
+    --sky-light: 210 65% 80%;
+    
+    --blueberry-dark: 240 70% 45%;
+    --blueberry-medium: 240 65% 60%;
+    --blueberry-light: 240 55% 75%;
 
     /* Design system tokens */
     --card: 25 55% 98%;
@@ -45,24 +41,24 @@ All colors MUST be HSL.
     --popover: 25 55% 98%;
     --popover-foreground: 30 25% 15%;
 
-    --primary: 260 45% 35%;
-    --primary-foreground: 25 45% 98%;
+    --primary: 240 70% 45%;
+    --primary-foreground: 50 80% 98%;
 
-    --secondary: 35 55% 85%;
-    --secondary-foreground: 30 35% 25%;
+    --secondary: 50 80% 85%;
+    --secondary-foreground: 220 20% 20%;
 
-    --muted: 220 75% 95%;
-    --muted-foreground: 30 25% 45%;
+    --muted: 210 65% 95%;
+    --muted-foreground: 220 20% 45%;
 
-    --accent: 20 85% 75%;
-    --accent-foreground: 30 35% 25%;
+    --accent: 10 80% 65%;
+    --accent-foreground: 220 20% 20%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 25 45% 98%;
 
-    --border: 35 45% 88%;
-    --input: 35 45% 88%;
-    --ring: 260 45% 35%;
+    --border: 210 65% 88%;
+    --input: 210 65% 88%;
+    --ring: 240 70% 45%;
 
     --radius: 0.5rem;
 
@@ -84,69 +80,75 @@ All colors MUST be HSL.
   }
 
   .dark {
-    /* Dark mode: Evening coffee vibes ☕🌙 */
-    --background: 25 25% 12%;
-    --foreground: 35 55% 85%;
+    /* Dark mode: Starry night vibes 🌙✨ */
+    --background: 225 50% 8%;
+    --foreground: 210 40% 98%;
 
-    --card: 25 35% 18%;
-    --card-foreground: 35 55% 85%;
+    --card: 225 45% 12%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 25 35% 18%;
-    --popover-foreground: 35 55% 85%;
+    --popover: 225 45% 12%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 285 45% 75%;
-    --primary-foreground: 25 25% 12%;
+    --primary: 180 70% 70%;
+    --primary-foreground: 225 50% 8%;
 
-    --secondary: 30 45% 25%;
-    --secondary-foreground: 35 55% 85%;
+    --secondary: 225 40% 20%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 30 35% 22%;
-    --muted-foreground: 35 35% 65%;
+    --muted: 225 40% 20%;
+    --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 270 55% 65%;
-    --accent-foreground: 25 25% 12%;
+    --accent: 10 80% 65%;
+    --accent-foreground: 225 50% 8%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 35 55% 85%;
+    --destructive-foreground: 210 40% 98%;
 
-    --border: 30 25% 25%;
-    --input: 30 25% 25%;
-    --ring: 285 45% 75%;
+    --border: 225 40% 20%;
+    --input: 225 40% 20%;
+    --ring: 180 70% 70%;
 
-    /* Coffee-inspired warm colors */
-    --coffee-dark: 20 45% 15%;
-    --coffee-medium: 25 35% 35%;
-    --coffee-light: 30 45% 55%;
-
-    /* Blueberry in dark mode */
-    --blueberry-dark: 270 55% 25%;
-    --blueberry-medium: 275 65% 55%;
-    --blueberry-light: 280 75% 75%;
-
-    /* Water blues in dark */
-    --water-dark: 210 45% 35%;
-    --water-medium: 215 55% 55%;
-    --water-light: 220 65% 75%;
+    /* Summer night theme colors */
+    --coral-dark: 10 70% 50%;
+    --coral-medium: 10 60% 65%;
+    --coral-light: 10 50% 75%;
+    
+    --aqua-dark: 180 80% 55%;
+    --aqua-medium: 180 70% 70%;
+    --aqua-light: 180 60% 80%;
+    
+    --citrus-dark: 50 80% 60%;
+    --citrus-medium: 50 70% 75%;
+    --citrus-light: 50 60% 85%;
+    
+    --sky-dark: 210 70% 55%;
+    --sky-medium: 210 60% 70%;
+    --sky-light: 210 50% 80%;
+    
+    --blueberry-dark: 240 80% 60%;
+    --blueberry-medium: 240 70% 75%;
+    --blueberry-light: 240 60% 85%;
   }
 
-  /* Gradients for magical background */
+  /* Gradients for magical summer background */
   .gradient-sunrise {
     background: linear-gradient(135deg, 
-      hsl(var(--peach-light)) 0%, 
-      hsl(var(--lavender-light)) 50%, 
-      hsl(var(--water-light)) 100%);
+      hsl(var(--coral-light)) 0%, 
+      hsl(var(--citrus-light)) 50%, 
+      hsl(var(--aqua-light)) 100%);
   }
 
-  .gradient-coffee {
+  .gradient-summer {
     background: linear-gradient(45deg, 
-      hsl(var(--coffee-light)) 0%, 
-      hsl(var(--peach-medium)) 100%);
+      hsl(var(--sky-light)) 0%, 
+      hsl(var(--coral-medium)) 100%);
   }
 
   .gradient-blueberry {
     background: linear-gradient(135deg, 
       hsl(var(--blueberry-light)) 0%, 
-      hsl(var(--lavender-medium)) 100%);
+      hsl(var(--sky-medium)) 100%);
   }
 }
 

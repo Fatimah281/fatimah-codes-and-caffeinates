@@ -31,7 +31,9 @@ export const Navigation = ({ darkMode, toggleDarkMode }: NavigationProps) => {
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center space-x-2">
-          <Coffee className="w-6 h-6 text-primary animate-wiggle" />
+          <div className="w-6 h-6 bg-blueberry-medium rounded-full animate-wiggle flex items-center justify-center">
+            <span className="text-white text-xs">👩‍💻</span>
+          </div>
           <span className="text-xl font-bold text-primary">Fatimah</span>
         </div>
 
@@ -65,7 +67,7 @@ export const Navigation = ({ darkMode, toggleDarkMode }: NavigationProps) => {
           {darkMode ? (
             <Moon className="w-5 h-5 text-primary animate-bounce-gentle" />
           ) : (
-            <Coffee className="w-5 h-5 text-primary animate-pulse-soft" />
+            <Sun className="w-5 h-5 text-citrus-medium animate-pulse-soft" />
           )}
         </Button>
       </div>

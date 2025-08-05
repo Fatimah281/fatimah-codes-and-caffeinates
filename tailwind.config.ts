@@ -62,31 +62,31 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Fatimah's cozy theme colors
-				coffee: {
-					dark: 'hsl(var(--coffee-dark))',
-					medium: 'hsl(var(--coffee-medium))',
-					light: 'hsl(var(--coffee-light))'
+				// Fatimah's bright summer theme colors
+				coral: {
+					dark: 'hsl(var(--coral-dark))',
+					medium: 'hsl(var(--coral-medium))',
+					light: 'hsl(var(--coral-light))'
+				},
+				aqua: {
+					dark: 'hsl(var(--aqua-dark))',
+					medium: 'hsl(var(--aqua-medium))',
+					light: 'hsl(var(--aqua-light))'
+				},
+				citrus: {
+					dark: 'hsl(var(--citrus-dark))',
+					medium: 'hsl(var(--citrus-medium))',
+					light: 'hsl(var(--citrus-light))'
+				},
+				sky: {
+					dark: 'hsl(var(--sky-dark))',
+					medium: 'hsl(var(--sky-medium))',
+					light: 'hsl(var(--sky-light))'
 				},
 				blueberry: {
 					dark: 'hsl(var(--blueberry-dark))',
 					medium: 'hsl(var(--blueberry-medium))',
 					light: 'hsl(var(--blueberry-light))'
-				},
-				water: {
-					dark: 'hsl(var(--water-dark))',
-					medium: 'hsl(var(--water-medium))',
-					light: 'hsl(var(--water-light))'
-				},
-				peach: {
-					dark: 'hsl(var(--peach-dark))',
-					medium: 'hsl(var(--peach-medium))',
-					light: 'hsl(var(--peach-light))'
-				},
-				lavender: {
-					dark: 'hsl(var(--lavender-dark))',
-					medium: 'hsl(var(--lavender-medium))',
-					light: 'hsl(var(--lavender-light))'
 				}
 			},
 			borderRadius: {
