@@ -2,39 +2,67 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* Fatimah's Cozy Coding Design System 
+Warm tones inspired by coffee, blueberries, and daily developer vibes ☕🫐💧
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Base warm gradient background */
+    --background: 25 45% 98%;
+    --foreground: 30 25% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Coffee-inspired warm browns */
+    --coffee-dark: 25 35% 25%;
+    --coffee-medium: 30 45% 45%;
+    --coffee-light: 35 55% 85%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    /* Blueberry purples */
+    --blueberry-dark: 260 45% 35%;
+    --blueberry-medium: 270 55% 65%;
+    --blueberry-light: 280 65% 90%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Water blues */
+    --water-dark: 200 55% 45%;
+    --water-medium: 210 65% 75%;
+    --water-light: 220 75% 95%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Sunrise peach */
+    --peach-dark: 15 75% 65%;
+    --peach-medium: 20 85% 75%;
+    --peach-light: 25 95% 92%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Lavender */
+    --lavender-dark: 280 35% 55%;
+    --lavender-medium: 285 45% 75%;
+    --lavender-light: 290 55% 95%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Design system tokens */
+    --card: 25 55% 98%;
+    --card-foreground: 30 25% 15%;
+
+    --popover: 25 55% 98%;
+    --popover-foreground: 30 25% 15%;
+
+    --primary: 260 45% 35%;
+    --primary-foreground: 25 45% 98%;
+
+    --secondary: 35 55% 85%;
+    --secondary-foreground: 30 35% 25%;
+
+    --muted: 220 75% 95%;
+    --muted-foreground: 30 25% 45%;
+
+    --accent: 20 85% 75%;
+    --accent-foreground: 30 35% 25%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 25 45% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 35 45% 88%;
+    --input: 35 45% 88%;
+    --ring: 260 45% 35%;
 
     --radius: 0.5rem;
 
@@ -56,41 +84,69 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Dark mode: Evening coffee vibes ☕🌙 */
+    --background: 25 25% 12%;
+    --foreground: 35 55% 85%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 25 35% 18%;
+    --card-foreground: 35 55% 85%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 25 35% 18%;
+    --popover-foreground: 35 55% 85%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 285 45% 75%;
+    --primary-foreground: 25 25% 12%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 30 45% 25%;
+    --secondary-foreground: 35 55% 85%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 30 35% 22%;
+    --muted-foreground: 35 35% 65%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 270 55% 65%;
+    --accent-foreground: 25 25% 12%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 35 55% 85%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 30 25% 25%;
+    --input: 30 25% 25%;
+    --ring: 285 45% 75%;
+
+    /* Coffee-inspired warm colors */
+    --coffee-dark: 20 45% 15%;
+    --coffee-medium: 25 35% 35%;
+    --coffee-light: 30 45% 55%;
+
+    /* Blueberry in dark mode */
+    --blueberry-dark: 270 55% 25%;
+    --blueberry-medium: 275 65% 55%;
+    --blueberry-light: 280 75% 75%;
+
+    /* Water blues in dark */
+    --water-dark: 210 45% 35%;
+    --water-medium: 215 55% 55%;
+    --water-light: 220 65% 75%;
+  }
+
+  /* Gradients for magical background */
+  .gradient-sunrise {
+    background: linear-gradient(135deg, 
+      hsl(var(--peach-light)) 0%, 
+      hsl(var(--lavender-light)) 50%, 
+      hsl(var(--water-light)) 100%);
+  }
+
+  .gradient-coffee {
+    background: linear-gradient(45deg, 
+      hsl(var(--coffee-light)) 0%, 
+      hsl(var(--peach-medium)) 100%);
+  }
+
+  .gradient-blueberry {
+    background: linear-gradient(135deg, 
+      hsl(var(--blueberry-light)) 0%, 
+      hsl(var(--lavender-medium)) 100%);
   }
 }
 
