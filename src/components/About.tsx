@@ -6,7 +6,7 @@ export const About = () => {
   const timeline = [
     {
       year: "2021",
-      title: "University Journey Begins",
+      title: "University Journey Ends",
       description: "Graduated in Information Systems from King Abdulaziz University",
       icon: "🎓",
       color: "blueberry"
