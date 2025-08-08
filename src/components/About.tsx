@@ -1,144 +1,145 @@
-import { Card } from "@/components/ui/card";
-import { GraduationCap, Heart, MapPin, Sparkles } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Code2, Heart, Globe, Sparkles, GraduationCap, MapPin } from "lucide-react";
 
 export const About = () => {
-  const timelineItems = [
+  const timeline = [
     {
-      year: "2024",
-      title: "Full Stack Developer",
-      description: "Building scalable microservices and beautiful UIs",
-      icon: "💻",
-    },
-    {
-      year: "2023",
-      title: "UI/UX Explorer",
-      description: "Discovered my passion for clean design and user experience",
-      icon: "🎨",
-    },
-    {
-      year: "2022",
-      title: "Backend Specialist",
-      description: "Mastered .NET Core and API development",
-      icon: "⚡",
+      year: "2020",
+      title: "University Journey Begins",
+      description: "Started Computer Science at King Abdulaziz University",
+      icon: "🎓",
+      color: "blueberry"
     },
     {
       year: "2021",
-      title: "Computer Science Graduate",
-      description: "King Abdulaziz University - Where it all began",
-      icon: "🎓",
+      title: "First Development Role",
+      description: "Joined PrimeGate as Ionic Mobile Developer",
+      icon: "📱",
+      color: "coral"
     },
+    {
+      year: "2022",
+      title: "Freelance Adventures",
+      description: "Became Angular wizard helping various clients",
+      icon: "🌐",
+      color: "aqua"
+    },
+    {
+      year: "2023",
+      title: "Full Stack Mastery",
+      description: "Backend & Frontend Developer at NeomTech",
+      icon: "👩‍💻",
+      color: "citrus"
+    },
+    {
+      year: "2024",
+      title: "Current Chapter",
+      description: "Building scalable systems and magical experiences",
+      icon: "✨",
+      color: "sky"
+    }
   ];
 
   return (
-    <section id="about" className="py-20 px-4">
-      <div className="container mx-auto max-w-6xl">
-        {/* Section Header */}
+    <section id="about" className="py-20 bg-muted/30">
+      <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary">
+          <h2 className="text-4xl font-bold mb-4 animate-fade-in-up">
             About Me
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            My journey from curiosity to code, fueled by coffee and creativity ☕
+          <p className="text-xl text-muted-foreground animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
+            Saudi developer blending curiosity with creativity
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-start">
-          {/* Story Card */}
-          <Card className="p-8 bg-gradient-to-br from-card to-secondary/30 border-2 border-primary/20 shadow-2xl animate-fade-in-up">
-            <div className="space-y-6">
-              <div className="flex items-center space-x-3 mb-6">
-                <Sparkles className="w-8 h-8 text-primary animate-pulse-soft" />
-                <h3 className="text-2xl font-bold text-primary">My Story</h3>
-              </div>
-
-              <div className="space-y-4 text-muted-foreground">
-                <p className="flex items-start space-x-3">
-                  <MapPin className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                  <span>
-                    <strong className="text-foreground">Saudi developer from Jeddah</strong> - 
-                    Bringing Middle Eastern warmth to the world of code
-                  </span>
-                </p>
-
-                <p className="flex items-start space-x-3">
-                  <Heart className="w-5 h-5 text-accent mt-1 flex-shrink-0" />
-                  <span>
-                    <strong className="text-foreground">Passionate about microservices</strong>, 
-                    scalable systems, and creating UI/UX magic that makes users smile
-                  </span>
-                </p>
-
-                <p className="flex items-start space-x-3">
-                  <GraduationCap className="w-5 h-5 text-water-dark mt-1 flex-shrink-0" />
-                  <span>
-                    <strong className="text-foreground">Computer Science graduate</strong> from 
-                    King Abdulaziz University, where my love affair with algorithms began
-                  </span>
-                </p>
-
-                <div className="mt-6 p-4 bg-accent/20 rounded-lg border border-accent/30">
-                  <p className="text-center italic text-foreground">
-                    "I love clean code and cleaner design. Every line of code should be as 
-                    satisfying as that first sip of morning coffee with blueberries." ☕🫐
-                  </p>
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
+          {/* Story Section */}
+          <div className="animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
+            <Card className="p-8 bg-card/95 backdrop-blur-sm border-2 border-primary/20 shadow-xl">
+              <CardHeader>
+                <CardTitle className="text-2xl flex items-center gap-2">
+                  <Heart className="w-6 h-6 text-accent" />
+                  My Story
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="flex items-center gap-2 mb-4">
+                  <MapPin className="w-5 h-5 text-coral-medium" />
+                  <span className="text-coral-medium font-semibold">Jeddah, Saudi Arabia</span>
                 </div>
-              </div>
-            </div>
-          </Card>
+                
+                <p className="text-muted-foreground leading-relaxed">
+                  I'm a passionate Full Stack Developer who believes the best solutions come from blending 
+                  <span className="text-aqua-medium font-semibold"> curiosity</span> with 
+                  <span className="text-coral-medium font-semibold"> creativity</span>. 
+                  My journey in tech is driven by an insatiable love for creating scalable systems that make a difference.
+                </p>
+                
+                <p className="text-muted-foreground leading-relaxed">
+                  I specialize in <span className="text-primary font-semibold">microservices architecture</span>, 
+                  building robust backend systems, and crafting intuitive user experiences. 
+                  My philosophy is simple: <span className="text-accent font-semibold">clean code leads to cleaner design</span>.
+                </p>
 
-          {/* Timeline */}
-          <div className="animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-            <h3 className="text-2xl font-bold text-primary mb-8 text-center">
-              My Journey Timeline
-            </h3>
-            
-            <div className="relative">
-              {/* Timeline line made of droplets */}
-              <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-water-light via-blueberry-light to-primary"></div>
-              
-              {timelineItems.map((item, index) => (
-                <div 
-                  key={index} 
-                  className="relative flex items-start space-x-6 mb-8 animate-slide-in-right"
-                  style={{ animationDelay: `${index * 0.1}s` }}
-                >
-                  {/* Timeline dot (blueberry-style) */}
-                  <div className="relative">
-                    <div className="w-16 h-16 bg-gradient-to-br from-blueberry-light to-blueberry-dark rounded-full flex items-center justify-center text-2xl shadow-lg animate-bounce-gentle border-4 border-card">
-                      {item.icon}
-                    </div>
+                <div className="grid grid-cols-2 gap-4 pt-4">
+                  <div className="text-center p-3 bg-blueberry-light/20 rounded-lg">
+                    <div className="text-2xl mb-1">🫐</div>
+                    <div className="text-sm text-blueberry-dark font-medium">Morning Fuel</div>
                   </div>
-
-                  {/* Timeline content */}
-                  <Card className="flex-1 p-4 bg-card/80 backdrop-blur-sm border border-primary/20 hover:shadow-lg transition-all duration-300">
-                    <div className="flex items-center space-x-2 mb-2">
-                      <span className="text-sm font-bold text-primary bg-primary/10 px-2 py-1 rounded-full">
-                        {item.year}
-                      </span>
-                    </div>
-                    <h4 className="text-lg font-semibold text-foreground mb-1">
-                      {item.title}
-                    </h4>
-                    <p className="text-muted-foreground text-sm">
-                      {item.description}
-                    </p>
-                  </Card>
+                  <div className="text-center p-3 bg-aqua-light/20 rounded-lg">
+                    <div className="text-2xl mb-1">💧</div>
+                    <div className="text-sm text-aqua-dark font-medium">1.5L Daily</div>
+                  </div>
                 </div>
-              ))}
-            </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Timeline Section */}
+          <div className="animate-fade-in-up" style={{ animationDelay: "0.6s" }}>
+            <Card className="p-8 bg-card/95 backdrop-blur-sm border-2 border-primary/20 shadow-xl">
+              <CardHeader>
+                <CardTitle className="text-2xl flex items-center gap-2">
+                  <Sparkles className="w-6 h-6 text-primary" />
+                  My Journey
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="relative">
+                  {/* Timeline line made of blueberries */}
+                  <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blueberry-light via-aqua-light to-citrus-light"></div>
+                  
+                  <div className="space-y-6">
+                    {timeline.map((item, index) => (
+                      <div key={index} className="relative flex items-start gap-4">
+                        {/* Blueberry timeline marker */}
+                        <div className={`flex-shrink-0 w-8 h-8 bg-${item.color}-medium rounded-full flex items-center justify-center text-sm z-10 animate-bounce-gentle`} 
+                             style={{ animationDelay: `${index * 0.2}s` }}>
+                          {item.icon}
+                        </div>
+                        
+                        <div className="flex-1 pb-4">
+                          <div className="flex items-center gap-2 mb-1">
+                            <Badge variant="outline" className="text-xs px-2 py-0.5">
+                              {item.year}
+                            </Badge>
+                          </div>
+                          <h4 className="font-semibold text-foreground mb-1">
+                            {item.title}
+                          </h4>
+                          <p className="text-sm text-muted-foreground">
+                            {item.description}
+                          </p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
-
-        {/* Fun fact box */}
-        <Card className="mt-16 p-6 bg-gradient-to-r from-peach-light to-lavender-light border-2 border-accent/30 animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
-          <div className="text-center">
-            <h4 className="text-xl font-bold text-primary mb-2">Fun Fact</h4>
-            <p className="text-muted-foreground">
-              I start every coding session with exactly 3 blueberries and a perfectly brewed coffee. 
-              It's not superstition, it's science! (Well, at least it works for me) 🫐☕✨
-            </p>
-          </div>
-        </Card>
       </div>
     </section>
   );
