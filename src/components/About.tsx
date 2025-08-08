@@ -5,37 +5,37 @@ import { Code2, Heart, Globe, Sparkles, GraduationCap, MapPin } from "lucide-rea
 export const About = () => {
   const timeline = [
     {
-      year: "2020",
+      year: "2021",
       title: "University Journey Begins",
-      description: "Started Computer Science at King Abdulaziz University",
+      description: "Graduated in Information Systems from King Abdulaziz University",
       icon: "🎓",
       color: "blueberry"
     },
     {
-      year: "2021",
-      title: "First Development Role",
+      year: "2022",
+      title: " Mobile Developer",
       description: "Joined PrimeGate as Ionic Mobile Developer",
       icon: "📱",
       color: "coral"
     },
     {
-      year: "2022",
-      title: "Freelance Adventures",
-      description: "Became Angular wizard helping various clients",
+      year: "2023",
+      title: " Software Developer",
+      description: "Gained expertise in Angular, contributing to multiple projects using Angular and Ionic.",
       icon: "🌐",
       color: "aqua"
     },
     {
-      year: "2023",
-      title: "Full Stack Mastery",
-      description: "Backend & Frontend Developer at NeomTech",
+      year: "2024",
+      title: "Full-stack Developer",
+      description: "Backend & Frontend Developer at NeomTech - BCare insurance system",
       icon: "👩‍💻",
       color: "citrus"
     },
     {
-      year: "2024",
-      title: "Current Chapter",
-      description: "Building scalable systems and magical experiences",
+      year: "2025",
+      title: "Full-Stack Developer",
+      description: "Backend & Frontend Developer at NeomTech - BCare insurance system",
       icon: "✨",
       color: "sky"
     }
@@ -64,35 +64,30 @@ export const About = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                <div className="flex items-center gap-2 mb-4">
-                  <MapPin className="w-5 h-5 text-coral-medium" />
-                  <span className="text-coral-medium font-semibold">Jeddah, Saudi Arabia</span>
-                </div>
-                
-                <p className="text-muted-foreground leading-relaxed">
-                  I'm a passionate Full Stack Developer who believes the best solutions come from blending 
-                  <span className="text-aqua-medium font-semibold"> curiosity</span> with 
-                  <span className="text-coral-medium font-semibold"> creativity</span>. 
-                  My journey in tech is driven by an insatiable love for creating scalable systems that make a difference.
-                </p>
-                
-                <p className="text-muted-foreground leading-relaxed">
-                  I specialize in <span className="text-primary font-semibold">microservices architecture</span>, 
-                  building robust backend systems, and crafting intuitive user experiences. 
-                  My philosophy is simple: <span className="text-accent font-semibold">clean code leads to cleaner design</span>.
-                </p>
+  <div className="flex items-center gap-2 mb-4">
+    <MapPin className="w-5 h-5 text-coral-medium" />
+    <span className="text-coral-medium font-semibold">Saudi Arabia</span>
+  </div>
+  
+  <p className="text-muted-foreground leading-relaxed">
+    My tech journey began in 2021 with my senior graduation project. I explored 
+    <span className="text-aqua-medium font-semibold"> Flutter</span>, built an app to help autistic children express emotions, 
+    and integrated it with <span className="text-primary font-semibold">Arduino</span> and 
+    <span className="text-coral-medium font-semibold"> Firebase</span> for real-time updates. 
+    That experience sparked my passion for coding, and I’ve been creating scalable, clean, and user-friendly systems ever since.
+  </p>
 
-                <div className="grid grid-cols-2 gap-4 pt-4">
-                  <div className="text-center p-3 bg-blueberry-light/20 rounded-lg">
-                    <div className="text-2xl mb-1">🫐</div>
-                    <div className="text-sm text-blueberry-dark font-medium">Morning Fuel</div>
-                  </div>
-                  <div className="text-center p-3 bg-aqua-light/20 rounded-lg">
-                    <div className="text-2xl mb-1">💧</div>
-                    <div className="text-sm text-aqua-dark font-medium">1.5L Daily</div>
-                  </div>
-                </div>
-              </CardContent>
+  <div className="grid grid-cols-2 gap-4 pt-4">
+    <div className="text-center p-3 bg-blueberry-light/20 rounded-lg">
+      <div className="text-2xl mb-1">☕</div>
+      <div className="text-sm text-blueberry-dark font-medium">Morning Fuel</div>
+    </div>
+    <div className="text-center p-3 bg-aqua-light/20 rounded-lg">
+      <div className="text-2xl mb-1">💧</div>
+      <div className="text-sm text-aqua-dark font-medium">1.5L Daily</div>
+    </div>
+  </div>
+</CardContent>
             </Card>
           </div>
 

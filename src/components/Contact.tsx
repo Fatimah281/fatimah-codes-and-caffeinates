@@ -43,7 +43,7 @@ export const Contact = () => {
             Let's Connect
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Ready to create something amazing together? Drop me a message and let's stay hydrated! 💧
+            Ready to create something amazing together? Drop me a message and let's stay hydrated!
           </p>
         </div>
 
@@ -127,18 +127,18 @@ export const Contact = () => {
               
               <div className="space-y-4">
                 <a 
-                  href="mailto:fatimah.alhamawi@example.com"
+                  href="mailto:alhamawifatimah22@gmail.com"
                   className="flex items-center space-x-3 p-3 rounded-lg bg-card hover:bg-primary/10 transition-colors group"
                 >
                   <Mail className="w-6 h-6 text-primary group-hover:animate-bounce-gentle" />
                   <div>
                     <p className="font-medium text-foreground">Email</p>
-                    <p className="text-sm text-muted-foreground">fatimah.alhamawi@example.com</p>
+                    <p className="text-sm text-muted-foreground">alhamawifatimah22@gmail.com</p>
                   </div>
                 </a>
 
                 <a 
-                  href="https://linkedin.com/in/fatimah-alhamawi"
+                  href="https://www.linkedin.com/in/fatimah-alhamawi-75b9b2182"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center space-x-3 p-3 rounded-lg bg-card hover:bg-primary/10 transition-colors group"
@@ -152,7 +152,7 @@ export const Contact = () => {
               </div>
             </Card>
 
-            {/* Fun Facts */}
+            {/* Fun Facts
             <Card className="p-6 bg-gradient-to-br from-card to-coral-light/20 border-2 border-accent/30">
               <h3 className="text-xl font-bold text-primary mb-4">
                 When you message me... ✨
@@ -176,7 +176,7 @@ export const Contact = () => {
                   <span>Reply with summer energy and attention to detail</span>
                 </div>
               </div>
-            </Card>
+            </Card> */}
 
             {/* Location & Availability */}
             <Card className="p-6 bg-gradient-to-br from-card to-lavender-light/20 border-2 border-primary/20">
@@ -185,7 +185,7 @@ export const Contact = () => {
               <div className="space-y-3 text-muted-foreground">
                 <p className="flex items-center space-x-2">
                   <span className="text-lg">📍</span>
-                  <span><strong>Location:</strong> Jeddah, Saudi Arabia</span>
+                  <span><strong>Location:</strong> Riyadh, Saudi Arabia</span>
                 </p>
                 <p className="flex items-center space-x-2">
                   <span className="text-lg">🕒</span>
@@ -213,7 +213,7 @@ export const Contact = () => {
             <p className="text-muted-foreground">
               Whether you have a project in mind, want to collaborate, or just want to chat about 
               code and blueberries, I'd love to hear from you. Every great project starts 
-              with a simple "hello"! 🫐✨
+              with a simple "hello"!
             </p>
           </div>
         </Card>

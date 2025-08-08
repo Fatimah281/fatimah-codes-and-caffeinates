@@ -35,9 +35,10 @@ export const Skills = () => {
       bgColor: "bg-coral-light/20",
       skills: [
         { name: "Angular", level: 92, icon: "🅰️" },
-        { name: "TypeScript", level: 85, icon: "🟦" },
-        { name: "CSS/SCSS", level: 80, icon: "🎨" },
-        { name: "Ionic", level: 75, icon: "📱" }
+        { name: "React", level: 85, icon: "🟦" },
+        { name: "Ionic", level: 75, icon: "📱" },
+        { name: "Tailwind", level: 80, icon: "🎨" }
+
       ]
     },
     {
@@ -49,7 +50,7 @@ export const Skills = () => {
         { name: "Docker", level: 78, icon: "🐳" },
         { name: "GitHub", level: 88, icon: "🐙" },
         { name: "Jenkins", level: 70, icon: "⚙️" },
-        { name: "Swagger", level: 85, icon: "📋" }
+        { name: "Postman", level: 85, icon: "📋" }
       ]
     }
   ];
@@ -84,21 +85,20 @@ export const Skills = () => {
         </div>
 
         {/* Floating Tech Stack Badges */}
-        <div className="mb-16 animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
-          <h3 className="text-2xl font-semibold text-center mb-8">Tech Stack</h3>
-          <div className="flex flex-wrap justify-center gap-4">
-            {techStack.map((tech, index) => (
-              <Badge
-                key={index}
-                className={`${tech.color} text-white px-6 py-3 text-sm font-medium hover:scale-110 transition-all duration-300 animate-float shadow-lg hover:shadow-xl`}
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <tech.icon className="w-4 h-4 mr-2" />
-                {tech.name}
-              </Badge>
-            ))}
-          </div>
+       <div className="mb-16">
+        <h3 className="text-2xl font-semibold text-center mb-8">Tech Stack</h3>
+        <div className="flex flex-wrap justify-center gap-4">
+          {techStack.map((tech, index) => (
+            <Badge
+              key={index}
+              className={`${tech.color} text-white px-6 py-3 text-sm font-medium hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-xl`}
+            >
+              <tech.icon className="w-4 h-4 mr-2" />
+              {tech.name}
+            </Badge>
+          ))}
         </div>
+      </div>
 
         {/* Animated Skill Categories */}
         <div className="grid md:grid-cols-3 gap-8">
@@ -143,7 +143,7 @@ export const Skills = () => {
           <Card className="p-8 bg-gradient-summer/10 backdrop-blur-sm border-2 border-accent/20 shadow-xl inline-block">
             <div className="flex justify-center mb-4">
               <div className="w-12 h-12 bg-citrus-light/30 rounded-full flex items-center justify-center animate-pulse-soft">
-                <span className="text-2xl">🫐</span>
+                <span className="text-2xl">🌼</span>
               </div>
             </div>
             <p className="text-lg text-muted-foreground mb-4 max-w-md">

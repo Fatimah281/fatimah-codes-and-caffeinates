@@ -37,10 +37,10 @@ export const Hero = () => {
       {/* Main Content */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
         <Card className="p-8 md:p-12 bg-card/90 backdrop-blur-sm border-2 border-primary/20 shadow-2xl">
-          {/* Greeting with animated wave */}
+          {/* Greeting with animated wave 
           <div className="mb-6">
             <span className="text-2xl animate-wiggle inline-block">👋</span>
-          </div>
+          </div>*/}
 
           {/* Main headline */}
           <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in-up">
@@ -48,7 +48,6 @@ export const Hero = () => {
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
               Fatimah
             </span>{" "}
-            👋
           </h1>
 
           {/* Subtitle with typing animation effect */}
@@ -65,7 +64,7 @@ export const Hero = () => {
 
           {/* Personalized tagline */}
           <p className="text-lg text-muted-foreground mb-8 animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
-            Saudi developer from Jeddah, crafting scalable systems and magical user experiences
+            Saudi developer from Riyadh, crafting scalable systems and magical user experiences
           </p>
 
           {/* Daily routine icons */}
@@ -94,14 +93,21 @@ export const Hero = () => {
               <Mail className="w-5 h-5 mr-2" />
               Let's Connect
             </Button>
-            <Button 
-              variant="outline" 
-              size="lg"
-              className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-            >
-              <Download className="w-5 h-5 mr-2" />
-              View Resume
-            </Button>
+           <a
+  href="https://drive.google.com/uc?export=view&id=1nhZLGPGEj-TnPxe7ZdF--1Fo-QytbAEa"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <Button 
+    variant="outline" 
+    size="lg"
+    className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+  >
+    <Download className="w-5 h-5 mr-2" />
+    View Resume
+  </Button>
+</a>
+
           </div>
         </Card>
       </div>

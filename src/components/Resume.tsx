@@ -5,59 +5,64 @@ import { Calendar, MapPin, Building, Smartphone, Globe, GraduationCap } from "lu
 export const Resume = () => {
   const experiences = [
     {
-      company: "NeomTech",
+      company: "NeomTech - Bcare",
       role: "Full Stack Developer",
-      period: "2023 - Present",
+      period: "2024 - Present",
       location: "Riyadh, Saudi Arabia",
       icon: "👩‍💻",
-      description: "Developing scalable microservices and responsive frontends for enterprise applications.",
-      technologies: [".NET Core", "Angular", "SQL Server", "Docker", "Azure"],
+      description: "Developing scalable services and responsive frontends for enterprise applications.",
+      technologies: [".NET Core", "Angular", "SQL Server", "Elasticsearch", "Jenkins","Hangfire"],
       highlights: [
-        "Built microservices architecture serving 10k+ users",
-        "Improved API performance by 40%",
-        "Led frontend modernization project"
+      "Developed backend logic with validations, services, and APIs",
+    "Built and integrated frontend components",
+    "Tested, debugged, and optimized applications",
+    "Managed code via pull requests across environments",
+    "Deployed apps manually and through pipelines",
+    "Refactored legacy code and fixed bugs",
+    "Maintained system stability and supported Ops team during issues",
+    "Documented work for maintainability"
       ]
     },
     {
       company: "Freelancer",
-      role: "Angular Wizard",
-      period: "2022 - 2023",
-      location: "Remote",
+      role: " Software Developer",
+      period: "2023 - 2024",
+      location: "Remote/ Riyadh, Saudi Arabia",
       icon: "🌐",
-      description: "Created stunning web applications for clients across the Middle East.",
-      technologies: ["Angular", "TypeScript", "RxJS", "Material UI", "Firebase"],
+      description: "Created stunning web applications for clients ",
+      technologies: ["Angular", "TypeScript", "RxJS", "Material UI", "Oracle","Business Analysis"],
       highlights: [
-        "Delivered 15+ successful projects",
-        "98% client satisfaction rate",
-        "Specialized in e-commerce solutions"
+    "Develop responsive, high-performance web applications using Angular",
+    "Collaborate with senior developers to translate business needs into technical solutions",
+    "Manage project updates and features on GitHub for version control",
+    "Create technical documentation (BRD, HLD) for stakeholder alignment"
       ]
     },
     {
       company: "PrimeGate",
       role: "Mobile Developer",
-      period: "2021 - 2022",
+      period: "2022 - 2023",
       location: "Jeddah, Saudi Arabia",
       icon: "📱",
       description: "Crafted beautiful mobile experiences with Ionic and modern web technologies.",
       technologies: ["Ionic", "Angular", "Capacitor", "SQLite", "REST APIs"],
       highlights: [
-        "Published 5 mobile apps to app stores",
-        "Achieved 4.8+ average app ratings",
-        "Optimized for offline functionality"
+      "Design and develop interactive user interfaces using Ionic Components",
+    "Implement and customize application features based on project requirements",
+    "Debug issues (bugs) and conduct testing to improve app stability"
       ]
     }
   ];
 
   const education = {
-    degree: "Bachelor of Computer Science",
+    degree: "Bachelor of Information Systems",
     university: "King Abdulaziz University",
     period: "2017 - 2021",
     location: "Jeddah, Saudi Arabia",
     details: "Specialized in Software Engineering with focus on web technologies",
     achievements: [
-      "Graduated with Honors",
-      "Senior Project: E-learning Platform",
-      "Active in Programming Club"
+      "Senior Project: Flutter app to help autistic children express emotions",
+      "Intern: Created an app for guiding university employees using Java in Android Studio, designed prototypes, and managed testing and documentation."
     ]
   };
 
@@ -70,7 +75,7 @@ export const Resume = () => {
             My Journey
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            From university dreams to real-world impact - here's my professional story 📖
+            From university dreams to real-world impact - here's my professional story
           </p>
         </div>
 
@@ -195,7 +200,7 @@ export const Resume = () => {
         </div>
 
         {/* Fun Addition */}
-        <Card className="mt-12 p-6 bg-gradient-to-r from-coffee-light to-peach-light border-2 border-accent/30 animate-fade-in-up" style={{ animationDelay: "0.6s" }}>
+        {/* <Card className="mt-12 p-6 bg-gradient-to-r from-coffee-light to-peach-light border-2 border-accent/30 animate-fade-in-up" style={{ animationDelay: "0.6s" }}>
           <div className="text-center">
             <h4 className="text-xl font-bold text-primary mb-2">Coffee Break Fact ☕</h4>
             <p className="text-muted-foreground">
@@ -204,7 +209,7 @@ export const Resume = () => {
               Every experience has been a stepping stone to becoming the developer I am today!
             </p>
           </div>
-        </Card>
+        </Card> */}
       </div>
     </section>
   );

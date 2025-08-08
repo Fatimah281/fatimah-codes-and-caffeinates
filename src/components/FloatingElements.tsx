@@ -6,7 +6,7 @@ export const FloatingElements = () => {
 
   const handleCoffeeClick = () => {
     setShowEasterEgg(true);
-    setTimeout(() => setShowEasterEgg(false), 3000);
+    setTimeout(() => setShowEasterEgg(false), 300000);
   };
 
   return (
@@ -89,7 +89,7 @@ export const FloatingElements = () => {
             
             <div className="flex justify-center space-x-4 text-sm">
               <a 
-                href="https://open.spotify.com/playlist/your-coding-playlist" 
+                href="https://open.spotify.com/album/1wwBFRM9d46DGyf2GnXyCH" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-primary hover:text-primary/80 underline"
