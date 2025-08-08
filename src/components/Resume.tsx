@@ -75,7 +75,7 @@ export const Resume = () => {
             My Journey
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            From university dreams to real-world impact - here's my professional story
+            From university dreams to real-world impact. here's my professional story
           </p>
         </div>
 
@@ -135,17 +135,18 @@ export const Resume = () => {
                   </div>
 
                   {/* Highlights */}
-                  <div>
-                    <h5 className="font-semibold text-foreground mb-3">Key Highlights</h5>
-                    <ul className="space-y-1 text-sm text-muted-foreground">
-                      {exp.highlights.map((highlight, highlightIndex) => (
-                        <li key={highlightIndex} className="flex items-start space-x-2">
-                          <span className="text-accent font-bold">•</span>
-                          <span>{highlight}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+               <div>
+  <h5 className="font-semibold text-foreground mb-3">Key Highlights</h5>
+  <ul className="space-y-2 text-sm text-muted-foreground list-none">
+    {exp.highlights.map((highlight, highlightIndex) => (
+      <li key={highlightIndex} className="pl-6 relative">
+        <span className="absolute left-0 top-1 text-accent font-bold">•</span>
+        <span>{highlight}</span>
+      </li>
+    ))}
+  </ul>
+</div>
+
                 </div>
               </Card>
             ))}

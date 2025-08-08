@@ -6,6 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Mail, Linkedin, Send, Coffee, Heart, Droplets } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import emailjs from 'emailjs-com';
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
@@ -15,17 +16,40 @@ export const Contact = () => {
   });
   const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+  // const handleSubmit = (e: React.FormEvent) => {
+  //   e.preventDefault();
     
-    // Simulate form submission
+  //   // Simulate form submission
+  //   toast({
+  //     title: "Message sent! ☕",
+  //     description: "Thanks for reaching out! I'll get back to you soon with a coffee-fueled response.",
+  //   });
+    
+  //   setFormData({ name: "", email: "", message: "" });
+  // };
+
+  const handleSubmit = (e: React.FormEvent) => {
+  e.preventDefault();
+
+  emailjs.send(
+    'service_8rb4ln9',
+    'template_rih01rl',
+    formData,
+    'u5h1IGLrMaBmnNBIJ'
+  ).then(() => {
     toast({
       title: "Message sent! ☕",
       description: "Thanks for reaching out! I'll get back to you soon with a coffee-fueled response.",
     });
-    
     setFormData({ name: "", email: "", message: "" });
-  };
+  }).catch((error) => {
+    toast({
+      title: "Oops, something went wrong.",
+      description: "Please try again later.",
+    });
+    console.error('EmailJS error:', error);
+  });
+};
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
