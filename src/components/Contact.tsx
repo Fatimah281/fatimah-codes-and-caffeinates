@@ -16,40 +16,40 @@ export const Contact = () => {
   });
   const { toast } = useToast();
 
-  // const handleSubmit = (e: React.FormEvent) => {
-  //   e.preventDefault();
-    
-  //   // Simulate form submission
-  //   toast({
-  //     title: "Message sent! ☕",
-  //     description: "Thanks for reaching out! I'll get back to you soon with a coffee-fueled response.",
-  //   });
-    
-  //   setFormData({ name: "", email: "", message: "" });
-  // };
-
-  const handleSubmit = (e: React.FormEvent) => {
+const handleSubmit = (e: React.FormEvent) => {
   e.preventDefault();
 
-  emailjs.send(
+  const sendToMe = emailjs.send(
     'service_8rb4ln9',
     'template_rih01rl',
     formData,
     'u5h1IGLrMaBmnNBIJ'
-  ).then(() => {
-    toast({
-      title: "Message sent! ☕",
-      description: "Thanks for reaching out! I'll get back to you soon with a coffee-fueled response.",
+  );
+
+  const sendToUser = emailjs.send(
+    'service_8rb4ln9',
+    'template_zac3e3a',
+    formData,
+    'u5h1IGLrMaBmnNBIJ'
+  );
+
+  Promise.all([sendToMe, sendToUser])
+    .then(() => {
+      toast({
+        title: "Message sent! ☕",
+        description: "Thanks for reaching out! I'll get back to you soon!",
+      });
+      setFormData({ name: "", email: "", message: "" });
+    })
+    .catch((error) => {
+      toast({
+        title: "Oops, something went wrong.",
+        description: "Please try again later.",
+      });
+      console.error('EmailJS error:', error);
     });
-    setFormData({ name: "", email: "", message: "" });
-  }).catch((error) => {
-    toast({
-      title: "Oops, something went wrong.",
-      description: "Please try again later.",
-    });
-    console.error('EmailJS error:', error);
-  });
 };
+
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
