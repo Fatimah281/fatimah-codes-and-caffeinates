@@ -6,7 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Mail, Linkedin, Send, Coffee, Heart, Droplets } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
