@@ -150,20 +150,22 @@ export const Skills = () => {
               "I believe in continuous learning and staying curious about new technologies, 
               just like how I start each day with fresh blueberries!"
             </p>
-            <div className="space-y-3 text-sm text-muted-foreground">
-              <div className="flex justify-center items-center gap-2">
+            {/* <div className="flex justify-center items-center gap-4 text-sm text-muted-foreground">
+              <span className="flex items-center gap-2">
                 <Layers className="w-4 h-4 text-primary" />
                 Clean Architecture
-              </div>
-              <div className="flex justify-center items-center gap-2">
+              </span>
+              <span>•</span>
+              <span className="flex items-center gap-2">
                 <Zap className="w-4 h-4 text-accent" />
                 Performance First
-              </div>
-              <div className="flex justify-center items-center gap-2">
+              </span>
+              <span>•</span>
+              <span className="flex items-center gap-2">
                 <Code2 className="w-4 h-4 text-blueberry-medium" />
                 Best Practices
-              </div>
-            </div>
+              </span>
+            </div> */}
           </Card>
         </div>
       </div>

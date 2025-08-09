@@ -24,7 +24,7 @@ export const LoadingAnimation = () => {
             
             {/* Blueberry face */}
             <div className="relative w-full h-full flex items-center justify-center">
-              <span className="text-3xl animate-wiggle">🫐</span>
+              <span className="text-3xl animate-wiggle">👩‍💻</span>
             </div>
             
             {/* Sparkle trail */}
