@@ -93,9 +93,9 @@ export const Resume = () => {
                 className="p-6 bg-card border-2 border-primary/20 hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] animate-fade-in-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="grid md:grid-cols-4 gap-6">
+                <div className="grid md:grid-cols-3 gap-6">
                   {/* Company & Role */}
-                  <div className="md:col-span-2">
+                  <div className="md:col-span-3">
                     <div className="flex items-center space-x-3 mb-3">
                       <span className="text-3xl animate-bounce-gentle">{exp.icon}</span>
                       <div>
@@ -115,7 +115,7 @@ export const Resume = () => {
                       </div>
                     </div>
 
-                    <p className="text-muted-foreground">{exp.description}</p>
+                    <p className="text-muted-foreground mb-6">{exp.description}</p>
                   </div>
 
                   {/* Technologies */}
@@ -135,18 +135,17 @@ export const Resume = () => {
                   </div>
 
                   {/* Highlights */}
-               <div>
-  <h5 className="font-semibold text-foreground mb-3">Key Highlights</h5>
-  <ul className="space-y-2 text-sm text-muted-foreground list-none">
-    {exp.highlights.map((highlight, highlightIndex) => (
-      <li key={highlightIndex} className="pl-6 relative">
-        <span className="absolute left-0 top-1 text-accent font-bold">•</span>
-        <span>{highlight}</span>
-      </li>
-    ))}
-  </ul>
-</div>
-
+                  <div className="md:col-span-2">
+                    <h5 className="font-semibold text-foreground mb-3">Key Highlights</h5>
+                    <ul className="space-y-2 text-sm text-muted-foreground list-none">
+                      {exp.highlights.map((highlight, highlightIndex) => (
+                        <li key={highlightIndex} className="pl-6 relative">
+                          <span className="absolute left-0 top-1 text-accent font-bold">•</span>
+                          <span>{highlight}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
               </Card>
             ))}
