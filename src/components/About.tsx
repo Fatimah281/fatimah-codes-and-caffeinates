@@ -53,9 +53,9 @@ export const About = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div className="flex justify-center">
           {/* Story Section */}
-          <div className="animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
+          <div className="animate-fade-in-up max-w-2xl w-full" style={{ animationDelay: "0.4s" }}>
             <Card className="p-8 bg-card/95 backdrop-blur-sm border-2 border-primary/20 shadow-xl">
               <CardHeader>
                 <CardTitle className="text-2xl flex items-center gap-2">
@@ -74,7 +74,7 @@ export const About = () => {
     <span className="text-aqua-medium font-semibold"> Flutter</span>, built an app to help autistic children express emotions, 
     and integrated it with <span className="text-primary font-semibold">Arduino</span> and 
     <span className="text-coral-medium font-semibold"> Firebase</span> for real-time updates. 
-    That experience sparked my passion for coding, and I’ve been creating scalable, clean, and user-friendly systems ever since.
+    That experience sparked my passion for coding, and I've been creating scalable, clean, and user-friendly systems ever since.
   </p>
 
   <div className="grid grid-cols-2 gap-4 pt-4">
@@ -90,9 +90,6 @@ export const About = () => {
 </CardContent>
             </Card>
           </div>
-
-          {/* Timeline Section */}
-        
         </div>
       </div>
     </section>
