@@ -240,7 +240,20 @@ const handleSubmit = (e: React.FormEvent) => {
             </Card>
           </div>
         </div>
-
+ {/* Philosophy Card */}
+        <div className="text-center mt-16 animate-fade-in-up" style={{ animationDelay: "1.6s" }}>
+          <Card className="p-8 bg-gradient-summer/10 backdrop-blur-sm border-2 border-accent/20 shadow-xl inline-block">
+            <div className="flex justify-center mb-4">
+              <div className="w-12 h-12 bg-citrus-light/30 rounded-full flex items-center justify-center animate-pulse-soft">
+                <span className="text-2xl">🤍</span>
+              </div>
+            </div>
+            <p className="text-lg text-muted-foreground mb-4 max-w-md">
+              "I believe in continuous learning and staying curious about new technologies, 
+              just like how I start each day with fresh blueberries!"
+            </p>
+          </Card>
+        </div>
         {/* Footer Message 
         <Card className="mt-12 p-6 bg-gradient-to-r from-aqua-light via-blueberry-light to-coral-light border-2 border-primary/20 animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
           <div className="text-center">
