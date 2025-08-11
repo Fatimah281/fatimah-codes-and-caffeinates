@@ -228,7 +228,7 @@ const handleSubmit = (e: React.FormEvent) => {
           </div>
         </div>
 
-        {/* Footer Message */}
+        {/* Footer Message 
         <Card className="mt-12 p-6 bg-gradient-to-r from-aqua-light via-blueberry-light to-coral-light border-2 border-primary/20 animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
           <div className="text-center">
             <h4 className="text-xl font-bold text-primary mb-2">
@@ -241,6 +241,7 @@ const handleSubmit = (e: React.FormEvent) => {
             </p>
           </div>
         </Card>
+        */}
       </div>
     </section>
   );
