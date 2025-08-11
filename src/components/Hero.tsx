@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Coffee, Code, Laptop, Mail, Download, Heart } from "lucide-react";
-import heroImage from "@/assets/hero-floating-elements.jpg";
+import heroElegantBackground from "@/assets/hero-elegant-background.jpg";
 import coffeeIcon from "@/assets/coffee-icon.jpg";
 import blueberryIcon from "@/assets/blueberry-icon.jpg";
 import waterIcon from "@/assets/water-icon.jpg";
@@ -19,10 +19,10 @@ export const Hero = () => {
       {/* Gradient Background */}
       <div className="absolute inset-0 gradient-sunrise opacity-30" />
       
-      {/* Floating Background Image */}
+      {/* Elegant Background Image */}
       <div 
-        className="absolute inset-0 opacity-20 bg-cover bg-center animate-float"
-        style={{ backgroundImage: `url(${heroImage})` }}
+        className="absolute inset-0 opacity-30 bg-cover bg-center"
+        style={{ backgroundImage: `url(${heroElegantBackground})` }}
       />
 
       {/* Floating Icons */}

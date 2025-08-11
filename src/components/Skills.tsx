@@ -11,7 +11,9 @@ import {
   Container,
   Server,
   Layers,
-  Zap
+  Zap,
+  ExternalLink,
+  Calendar
 } from "lucide-react";
 
 export const Skills = () => {
@@ -62,6 +64,37 @@ export const Skills = () => {
     { name: "Docker", color: "bg-citrus-medium", icon: Container },
     { name: "APIs", color: "bg-sky-medium", icon: Zap },
     { name: "GitHub", color: "bg-primary", icon: GitBranch },
+  ];
+
+  const projects = [
+    {
+      title: "Task Management System",
+      description: "A comprehensive task management application built with Angular and .NET Core, featuring real-time updates and user collaboration.",
+      technologies: ["Angular", ".NET Core", "SQL Server", "SignalR"],
+      githubUrl: "https://github.com/Fatimah281",
+      createdAt: "2024"
+    },
+    {
+      title: "E-Commerce Mobile App",
+      description: "Cross-platform mobile application for online shopping with Ionic, featuring payment integration and inventory management.",
+      technologies: ["Ionic", "Angular", "Capacitor", "REST APIs"],
+      githubUrl: "https://github.com/Fatimah281",
+      createdAt: "2023"
+    },
+    {
+      title: "Autism Support App",
+      description: "Flutter-based mobile application designed to help autistic children express their emotions through interactive interfaces.",
+      technologies: ["Flutter", "Dart", "Firebase", "UI/UX Design"],
+      githubUrl: "https://github.com/Fatimah281",
+      createdAt: "2021"
+    },
+    {
+      title: "Employee Navigation System",
+      description: "Android application to guide university employees through campus facilities with interactive maps and location services.",
+      technologies: ["Java", "Android Studio", "Google Maps API", "SQLite"],
+      githubUrl: "https://github.com/Fatimah281",
+      createdAt: "2020"
+    }
   ];
 
   return (
@@ -138,8 +171,57 @@ export const Skills = () => {
           ))}
         </div>
 
+        {/* Featured Projects */}
+        <div className="mt-16">
+          <h3 className="text-2xl font-semibold text-center mb-8">Featured Projects</h3>
+          <div className="grid md:grid-cols-2 gap-6">
+            {projects.map((project, index) => (
+              <Card 
+                key={index}
+                className="p-6 bg-card/95 backdrop-blur-sm border-2 border-primary/20 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 animate-fade-in-up"
+                style={{ animationDelay: `${1.2 + index * 0.1}s` }}
+              >
+                <div className="flex items-start justify-between mb-4">
+                  <div>
+                    <h4 className="text-xl font-bold text-primary mb-2">{project.title}</h4>
+                    <div className="flex items-center text-sm text-muted-foreground mb-3">
+                      <Calendar className="w-4 h-4 mr-1" />
+                      {project.createdAt}
+                    </div>
+                  </div>
+                  <a
+                    href={project.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center space-x-1 text-primary hover:text-primary/80 transition-colors"
+                  >
+                    <GitBranch className="w-4 h-4" />
+                    <ExternalLink className="w-4 h-4" />
+                  </a>
+                </div>
+                
+                <p className="text-muted-foreground mb-4 text-sm leading-relaxed">
+                  {project.description}
+                </p>
+                
+                <div className="flex flex-wrap gap-2">
+                  {project.technologies.map((tech, techIndex) => (
+                    <Badge
+                      key={techIndex}
+                      variant="secondary"
+                      className="bg-primary/10 text-primary hover:bg-primary/20 transition-colors text-xs"
+                    >
+                      {tech}
+                    </Badge>
+                  ))}
+                </div>
+              </Card>
+            ))}
+          </div>
+        </div>
+
         {/* Philosophy Card */}
-        <div className="text-center mt-16 animate-fade-in-up" style={{ animationDelay: "1.2s" }}>
+        <div className="text-center mt-16 animate-fade-in-up" style={{ animationDelay: "1.6s" }}>
           <Card className="p-8 bg-gradient-summer/10 backdrop-blur-sm border-2 border-accent/20 shadow-xl inline-block">
             <div className="flex justify-center mb-4">
               <div className="w-12 h-12 bg-citrus-light/30 rounded-full flex items-center justify-center animate-pulse-soft">
@@ -150,22 +232,6 @@ export const Skills = () => {
               "I believe in continuous learning and staying curious about new technologies, 
               just like how I start each day with fresh blueberries!"
             </p>
-            {/* <div className="flex justify-center items-center gap-4 text-sm text-muted-foreground">
-              <span className="flex items-center gap-2">
-                <Layers className="w-4 h-4 text-primary" />
-                Clean Architecture
-              </span>
-              <span>•</span>
-              <span className="flex items-center gap-2">
-                <Zap className="w-4 h-4 text-accent" />
-                Performance First
-              </span>
-              <span>•</span>
-              <span className="flex items-center gap-2">
-                <Code2 className="w-4 h-4 text-blueberry-medium" />
-                Best Practices
-              </span>
-            </div> */}
           </Card>
         </div>
       </div>

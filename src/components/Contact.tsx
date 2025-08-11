@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Mail, Linkedin, Send, Coffee, Heart, Droplets } from "lucide-react";
+import { Mail, Linkedin, Send, Coffee, Heart, Droplets, Github } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import emailjs from '@emailjs/browser';
 
@@ -171,6 +171,19 @@ const handleSubmit = (e: React.FormEvent) => {
                   <div>
                     <p className="font-medium text-foreground">LinkedIn</p>
                     <p className="text-sm text-muted-foreground">Connect with me professionally</p>
+                  </div>
+                </a>
+
+                <a 
+                  href="https://github.com/Fatimah281"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center space-x-3 p-3 rounded-lg bg-card hover:bg-primary/10 transition-colors group"
+                >
+                  <Github className="w-6 h-6 text-primary group-hover:animate-bounce-gentle" />
+                  <div>
+                    <p className="font-medium text-foreground">GitHub</p>
+                    <p className="text-sm text-muted-foreground">Check out my repositories</p>
                   </div>
                 </a>
               </div>

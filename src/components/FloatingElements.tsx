@@ -32,47 +32,60 @@ export const FloatingElements = () => {
 
         {/* Code brackets */}
         <div className="absolute top-1/4 left-8">
-          <Code2 className="w-6 h-6 text-primary/40 animate-float" style={{ animationDelay: "0.5s" }} />
+          <Code2 className="w-6 h-6 text-primary/40" />
         </div>
 
         {/* Water droplets */}
         <div className="absolute top-1/3 right-1/4">
-          <Droplets className="w-5 h-5 text-aqua-medium/50 animate-bounce-gentle" style={{ animationDelay: "1s" }} />
+          <Droplets className="w-5 h-5 text-aqua-medium/50" />
         </div>
 
         {/* Heart */}
         <div className="absolute bottom-1/3 left-1/4">
-          <Heart className="w-4 h-4 text-accent/60 animate-pulse-soft" style={{ animationDelay: "0.8s" }} />
+          <Heart className="w-4 h-4 text-accent/60" />
         </div>
 
         {/* Sparkles */}
         <div className="absolute bottom-1/4 right-1/3">
-          <Sparkles className="w-5 h-5 text-primary/30 animate-float" style={{ animationDelay: "1.5s" }} />
+          <Sparkles className="w-5 h-5 text-primary/30" />
         </div>
 
         {/* Blueberries scattered */}
         <div className="absolute top-2/3 left-12">
-          <div className="w-3 h-3 bg-blueberry-medium rounded-full animate-bounce-gentle opacity-60" style={{ animationDelay: "2s" }} />
+          <div className="w-3 h-3 bg-blueberry-medium rounded-full opacity-60" />
         </div>
 
         <div className="absolute bottom-1/2 right-12">
-          <div className="w-2 h-2 bg-blueberry-dark rounded-full animate-float opacity-40" style={{ animationDelay: "0.3s" }} />
+          <div className="w-2 h-2 bg-blueberry-dark rounded-full opacity-40" />
         </div>
 
         {/* Code snippets */}
-        <div className="absolute top-1/2 left-4 text-xs text-primary/20 font-mono animate-fade-in-up" style={{ animationDelay: "3s" }}>
+        <div className="absolute top-1/2 left-4 text-xs text-primary/20 font-mono">
           {"{ }"}
         </div>
 
-        <div className="absolute bottom-1/4 left-1/3 text-xs text-primary/20 font-mono animate-fade-in-up" style={{ animationDelay: "3.5s" }}>
+        <div className="absolute bottom-1/4 left-1/3 text-xs text-primary/20 font-mono">
           {"</>"}
         </div>
       </div>
 
       {/* Easter Egg Modal */}
       {showEasterEgg && (
-        <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-background/80 backdrop-blur-sm animate-fade-in-up">
-          <div className="bg-card p-8 rounded-2xl border-2 border-primary/30 shadow-2xl max-w-md mx-4 text-center animate-scale-in">
+        <div 
+          className="fixed inset-0 z-[9999] flex items-center justify-center bg-background/80 backdrop-blur-sm animate-fade-in-up"
+          onClick={() => setShowEasterEgg(false)}
+        >
+          <div 
+            className="bg-card p-8 rounded-2xl border-2 border-primary/30 shadow-2xl max-w-md mx-4 text-center animate-scale-in"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              onClick={() => setShowEasterEgg(false)}
+              className="absolute top-4 right-4 text-muted-foreground hover:text-foreground transition-colors"
+            >
+              ✕
+            </button>
+            
             <div className="mb-4">
               <div className="w-16 h-16 bg-blueberry-medium rounded-full mx-auto animate-wiggle flex items-center justify-center">
                 <span className="text-white text-3xl">👩‍💻</span>

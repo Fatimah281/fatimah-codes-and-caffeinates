@@ -118,6 +118,19 @@ export const Resume = () => {
                     <p className="text-muted-foreground mb-6">{exp.description}</p>
                   </div>
 
+                  {/* Key Highlights */}
+                  <div className="md:col-span-2">
+                    <h5 className="font-semibold text-foreground mb-3">Key Highlights</h5>
+                    <ul className="space-y-2 text-sm text-muted-foreground list-none">
+                      {exp.highlights.map((highlight, highlightIndex) => (
+                        <li key={highlightIndex} className="pl-6 relative">
+                          <span className="absolute left-0 top-1 text-accent font-bold">•</span>
+                          <span>{highlight}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
                   {/* Technologies */}
                   <div>
                     <h5 className="font-semibold text-foreground mb-3">Technologies</h5>
@@ -132,19 +145,6 @@ export const Resume = () => {
                         </Badge>
                       ))}
                     </div>
-                  </div>
-
-                  {/* Highlights */}
-                  <div className="md:col-span-2">
-                    <h5 className="font-semibold text-foreground mb-3">Key Highlights</h5>
-                    <ul className="space-y-2 text-sm text-muted-foreground list-none">
-                      {exp.highlights.map((highlight, highlightIndex) => (
-                        <li key={highlightIndex} className="pl-6 relative">
-                          <span className="absolute left-0 top-1 text-accent font-bold">•</span>
-                          <span>{highlight}</span>
-                        </li>
-                      ))}
-                    </ul>
                   </div>
                 </div>
               </Card>
