@@ -55,7 +55,7 @@ export const About = () => {
 
         <div className="flex justify-center">
           {/* Story Section */}
-          <div className="animate-fade-in-up max-w-2xl w-full" style={{ animationDelay: "0.4s" }}>
+          <div className="animate-fade-in-up max-w-4xl w-full" style={{ animationDelay: "0.4s" }}>
             <Card className="p-8 bg-card/95 backdrop-blur-sm border-2 border-primary/20 shadow-xl">
               <CardHeader>
                 <CardTitle className="text-2xl flex items-center gap-2">
