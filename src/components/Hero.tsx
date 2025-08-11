@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 import { Coffee, Code, Laptop, Mail, Download, Heart } from "lucide-react";
 import heroElegantBackground from "@/assets/hero-elegant-background.jpg";
 import coffeeIcon from "@/assets/coffee-icon.jpg";
-import blueberryIcon from "@/assets/blueberry-icon.jpg";
+import freshBlueberriesIcon from "@/assets/fresh-blueberries-icon.jpg";
 import waterIcon from "@/assets/water-icon.jpg";
 
 export const Hero = () => {
@@ -70,7 +70,7 @@ export const Hero = () => {
           {/* Daily routine icons */}
           <div className="flex justify-center items-center space-x-8 mb-8 animate-fade-in-up" style={{ animationDelay: "0.6s" }}>
             <div className="flex flex-col items-center">
-              <img src={blueberryIcon} alt="Blueberries" className="w-16 h-16 rounded-full animate-bounce-gentle" />
+              <img src={freshBlueberriesIcon} alt="Blueberries" className="w-16 h-16 rounded-full animate-bounce-gentle" />
               <span className="text-sm text-muted-foreground mt-2">Morning Blueberries</span>
             </div>
             <div className="flex flex-col items-center">
