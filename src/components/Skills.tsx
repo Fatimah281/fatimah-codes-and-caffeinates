@@ -66,36 +66,37 @@ export const Skills = () => {
     { name: "GitHub", color: "bg-primary", icon: GitBranch },
   ];
 
-  const projects = [
-    {
-      title: "Task Management System",
-      description: "A comprehensive task management application built with Angular and .NET Core, featuring real-time updates and user collaboration.",
-      technologies: ["Angular", ".NET Core", "SQL Server", "SignalR"],
-      githubUrl: "https://github.com/Fatimah281",
-      createdAt: "2024"
-    },
-    {
-      title: "E-Commerce Mobile App",
-      description: "Cross-platform mobile application for online shopping with Ionic, featuring payment integration and inventory management.",
-      technologies: ["Ionic", "Angular", "Capacitor", "REST APIs"],
-      githubUrl: "https://github.com/Fatimah281",
-      createdAt: "2023"
-    },
-    {
-      title: "Autism Support App",
-      description: "Flutter-based mobile application designed to help autistic children express their emotions through interactive interfaces.",
-      technologies: ["Flutter", "Dart", "Firebase", "UI/UX Design"],
-      githubUrl: "https://github.com/Fatimah281",
-      createdAt: "2021"
-    },
-    {
-      title: "Employee Navigation System",
-      description: "Android application to guide university employees through campus facilities with interactive maps and location services.",
-      technologies: ["Java", "Android Studio", "Google Maps API", "SQLite"],
-      githubUrl: "https://github.com/Fatimah281",
-      createdAt: "2020"
-    }
-  ];
+  const projects =
+   [
+  {
+    title: "Employee Management System 🧑‍💼",
+    description: "A .NET 8 Blazor WebAssembly app with a .NET 8 API backend, featuring CRUD operations, PDF export, and a modern interactive UI.",
+    technologies: [".NET 8", "Blazor WebAssembly", ".NET 8 API", "CRUD", "PDF Export"],
+    githubUrl: "https://github.com/Fatimah281/DemoEmployeeManagement",
+    createdAt: "2025"
+  },
+  {
+    title: "Real Time Chat App 💬",
+    description: "This full-stack chat application enables real-time communication between users, built using Node.js for backend functionality and React.js for an interactive frontend.",
+    technologies: ["React", "Node.js"],
+    githubUrl: "https://github.com/Fatimah281/Chat-App_React_and_NodeJs",
+    createdAt: "2024"
+  },
+  {
+    title: "Weather App ☀️",
+    description: "A Flutter application that retrieves and displays real-time weather data for any location, with search by city name and weather icons based on current conditions.",
+    technologies: ["Flutter", "OpenWeatherMap API", "Weather Icons Package"],
+    githubUrl: "https://github.com/Fatimah281/Weather_App_Flutter",
+    createdAt: "2022"
+  },
+  {
+    title: "ACE Mobile App 🤝",
+    description: "A Flutter mobile application designed to help autistic children express their emotions.",
+    technologies: ["Flutter", "Dart", "REST APIs"],
+    githubUrl: "https://github.com/Fatimah281/ACE_APP_FLUTTER",
+    createdAt: "2021"
+  }
+];
 
   return (
     <section id="skills" className="py-20 bg-background relative overflow-hidden">
