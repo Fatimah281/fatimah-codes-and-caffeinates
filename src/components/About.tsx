@@ -92,48 +92,7 @@ export const About = () => {
           </div>
 
           {/* Timeline Section */}
-          <div className="animate-fade-in-up" style={{ animationDelay: "0.6s" }}>
-            <Card className="p-8 bg-card/95 backdrop-blur-sm border-2 border-primary/20 shadow-xl">
-              <CardHeader>
-                <CardTitle className="text-2xl flex items-center gap-2">
-                  <Sparkles className="w-6 h-6 text-primary" />
-                  My Journey
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="relative">
-                  {/* Timeline line made of blueberries */}
-                  <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blueberry-light via-aqua-light to-citrus-light"></div>
-                  
-                  <div className="space-y-6">
-                    {timeline.map((item, index) => (
-                      <div key={index} className="relative flex items-start gap-4">
-                        {/* Blueberry timeline marker */}
-                        <div className={`flex-shrink-0 w-8 h-8 bg-${item.color}-medium rounded-full flex items-center justify-center text-sm z-10 animate-bounce-gentle`} 
-                             style={{ animationDelay: `${index * 0.2}s` }}>
-                          {item.icon}
-                        </div>
-                        
-                        <div className="flex-1 pb-4">
-                          <div className="flex items-center gap-2 mb-1">
-                            <Badge variant="outline" className="text-xs px-2 py-0.5">
-                              {item.year}
-                            </Badge>
-                          </div>
-                          <h4 className="font-semibold text-foreground mb-1">
-                            {item.title}
-                          </h4>
-                          <p className="text-sm text-muted-foreground">
-                            {item.description}
-                          </p>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
+        
         </div>
       </div>
     </section>
