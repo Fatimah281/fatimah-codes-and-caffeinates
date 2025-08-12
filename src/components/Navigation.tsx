@@ -65,9 +65,9 @@ export const Navigation = ({ darkMode, toggleDarkMode }: NavigationProps) => {
           className="relative overflow-hidden transition-all duration-300 hover:scale-110"
         >
           {darkMode ? (
-            <Moon className="w-5 h-5 text-primary animate-bounce-gentle" />
-          ) : (
             <Sun className="w-5 h-5 text-citrus-medium animate-pulse-soft" />
+          ) : (
+            <Moon className="w-5 h-5 text-primary animate-bounce-gentle" />
           )}
         </Button>
       </div>
